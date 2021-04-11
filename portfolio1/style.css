@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=RocknRoll+One&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height:fit-content;
+}
+/* Navigation Bar */
+
+.introduction {
+  display: flex;
+  align-items: stretch;
+  background-color: black;
+}
+
+.social {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10em;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.links a {
+  color: black;
+}
+
+.links a:hover {
+  color: red;
+}
+
+.info {
+  /* flex-basis:85%; */
+  flex: 15;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.image {
+  /* flex-basis:60%; */
+  flex: 1;
+  background-color: black;
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 0rem 1rem;
+  z-index: 2;
+}
+
+.details {
+  flex: 2;
+  display: flex;
+  flex-flow: column wrap;
+  justify-items: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  padding: 1rem 0rem;
+  z-index: 1;
+}
+
+.title {
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6rem;
+  color: white;
+}
+
+.title h2 {
+  text-align: left;
+  font-size: 35px;
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+.title p {
+  font-size: large;
+  color: #D3D3D3;
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+.line {
+  width: 400px;
+  height: 5px;
+  background: yellow;
+  border-radius: 10px;
+}
+
+.content {
+  width: fit-content;
+  flex: 1;
+  text-align: left;
+  padding-right: 6rem;
+}
+
+.content h2 {
+  font-size: 30px;
+  color: #D3D3D3;
+  margin: 0;
+}
+
+.content h1 {
+  font-size: 100px;
+  color: white;
+  margin: 0;
+}
+
+/* Experience */
+
+.experience {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1em;
+}
+
+.heading {
+  width: 100%;
+  color: black;
+  font-size: 40px;
+  padding-left: 6rem;
+  text-align: left;
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 1em;
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+.cards h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.cards p {
+  font-weight: bold;
+}
+
+.cards a {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.cards a:hover {
+  transform: translateX(10px);
+}
+
+.c1 {
+  border-radius: 10px;
+  flex: 1;
+  background: linear-gradient(to right top, rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.5));
+  transition: transform 0.4s ease;
+}
+
+.c1 a {
+  align-items: center;
+  color: white;
+}
+
+.c1 h1 {
+  color: yellow;
+}
+
+.c1 h4 {
+  color: #999;
+}
+
+.c1 p {
+  color: white;
+}
+
+.c2 {
+  border-radius: 10px;
+  flex: 1;
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.1));
+
+  transition: transform 0.4s ease;
+}
+
+.c2 p {
+  color: rgb(49, 48, 48);
+}
+
+.c3 {
+  border-radius: 10px;
+  flex: 1;
+  height:fit-content;
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5),
+      rgba(255, 255, 255, 255.5));
+
+  transition: transform 0.4s ease;
+}
+
+.c3 p {
+  color: rgb(49, 48, 48);
+}
+
+.c1:hover {
+  transform: translateY(-10px);
+}
+
+.c2:hover {
+  transform: translateY(-10px);
+}
+
+.c3:hover {
+  transform: translateY(-10px);
+}
+
+/* Skills */
+.back {
+  width: 100%;
+  height:500px;
+  border: 2px solid #888;
+  background-image: url("back.png");
+  text-align: center;
+  padding: 1rem;
+}
+
+.outline {
+  color: whitesmoke;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding:2rem;
+  font-weight: 100px;
+  font-style: bold;
+  text-shadow: 2px 2px 2px black;
+}
+
+.outline h1{
+  font-size:50px;
+}
+
+.outline h3{
+  font-size:30px;
+}
+
+.outline button{
+  font-size:30px;
+  border-radius:10px;
+  transition:transform ease-out 0.2s;
+  font-weight:bold;
+  background:linear-gradient(to right top,rgba(0,0,0,0.8),
+  rgba(49, 48, 48, 0.3));
+  color:white;
+}
+.outline button:hover{
+  transform:translate(2px,2px);
+}
+
+/* footer */
+.end{
+  margin-left:4rem;
+}
+
+.work p{
+  font-size:25px;
+  font-weight:100px;
+}
+
+.email h1{
+  border-bottom:4px solid yellow;
+  width:fit-content;
+  font-size:50px;
+}
+
+.credentials{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.contact{
+  flex:2;
+  display:flex;
+  gap:5rem;
+  justify-content:center;
+  align-items:center;
+  font-weight:bold;
+  font-size:18px;
+  text-align:right;
+  padding-left:40px;
+}
+
+.contact a{
+  text-decoration:none;
+  color:black;
+}
+
+.contact a:hover{
+  color:aqua;
+  text-decoration:double;
+}
+
+.flinks{
+  display:flex;
+  gap:2rem;
+}
+
+.flinks a{
+  color:black;
+}
+
+.flinks a:hover{
+  color:yellow;
+}

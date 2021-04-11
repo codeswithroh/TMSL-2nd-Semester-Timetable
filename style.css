@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    color:white;
+    padding-top:2rem;
+}
+
+h2 {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+.info {
+    display: grid;
+    place-items: center;
+    margin-top:2rem;
+}
+
+#note{
+    opacity: 0;
+}
+
+.about {
+    padding:1rem;
+    background:white;
+    border-radius:10px;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fade {
+    animation: fadeIN 0.5s linear forwards;
+}
+
+@keyframes fadeIN {
+    0% {
+        opacity:0;
+    }
+    25% {
+        opacity:0.25;
+    }
+    50% {
+        opacity:0.50;
+    }
+    75% {
+        opacity:0.75;
+    }
+    100% {
+        opacity:1;
+        pointer-events: all;
+    }
+}
+
+
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    color:rgb(12, 206, 206);
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+    font-size:20px;
+}
+
+.department {
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+    width: 10rem;
+}
+
+.department::after {
+    content: '\25BC';
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom:0;
+    background:aqua;
+    padding: 1rem;
+    pointer-events: none;
+    transition:all 0.3s ease;
+}
+
+.department:hover::after {
+    background:white;
+    color:aqua;
+}
+
+#ECE {
+    display: none;
+}
+
+#EE {
+    display: none;
+}
+
+#CSE {
+    display: none;
+}
+
+#IT {
+    display:none;
+}

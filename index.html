@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMSL ROUTINE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h1 id="header">Choose Your Department:</h1>
+    <form name="rohit" id="rohit" class="department">
+        <select name="department" class="departments" onchange="checkData()">
+            <option value="none" selected disabled>SELECT</option>
+            <option value="ece">ECE</option>
+            <option value="ee">EE</option>
+            <option value="eie">EIE</option>
+            <option value="cse">CSE</option>
+            <option value="aiml">AI & ML</option>
+            <option value="it">IT</option>
+            <option value="ce">CE</option>
+            <option value="me">ME</option>
+            <option value="ft">FT</option>
+        </select>
+    </form>
+    <div class="info">
+        <a href="#" id="about-me"><i class="fa fa-info-circle fa-2x"></i></a>
+        <div class="about"><a href="portfolio1/index.html" target="_blank"><h2>About Me</h2></a></div>
+        <p id="note" style="color:white;padding-top:1rem;">(Note: Don't see this on mobile because its still not responsive)</p>
+    </div>
+    <!-- EE -->
+    <form name="EE" id="EE" class="department">
+        <select name="section" class="departments" onclick="checkData()">
+            <option value="none" selected disabled>SECTION</option>
+            <option value="a">A</option>
+            <option value="b">B</option>
+            <option value="c">C</option>
+        </select>
+    </form>
+    <!-- ECE -->
+    <form name="ECE" id="ECE" class="department">
+        <select name="section" class="departments" onclick="checkData()">
+            <option value="none" selected disabled>SECTION</option>
+            <option value="a">A</option>
+            <option value="b">B</option>
+        </select>
+    </form>
+    <!-- CSE -->
+    <form name="CSE" id="CSE" class="department">
+        <select name="section" class="departments" onclick="checkData()">
+            <option value="none" selected disabled>SECTION</option>
+            <option value="a">A</option>
+            <option value="b">B</option>
+        </select>
+    </form>
+    <!-- IT -->
+    <form name="IT" id="IT" class="department">
+        <select name="section" class="departments" onclick="checkData()">
+            <option value="none" selected disabled>SECTION</option>
+            <option value="a">A</option>
+            <option value="b">B</option>
+        </select>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
