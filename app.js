@@ -9,6 +9,7 @@ const IT = document.querySelector('#IT');
 const about= document.querySelector('#about-me');
 const info= document.querySelector('.about');
 const note= document.querySelector('#note');
+const book= document.querySelector('.book');
 
 about.addEventListener('click', function() {
     info.classList.toggle('fade');
@@ -31,6 +32,7 @@ function checkData() {
         about.style.display="none";
         info.style.display="none";
         note.style.display="none";
+        book.style.display="block";
         header.innerHTML = "Choose Your Section:";
         if (sectionee === 'a') {
             window.open('section-routines/ee-sec-a.html', "_self")
